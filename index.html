@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brillo Natural</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>BRILLO NATURAL</h1>
+        <p>LA BELLEZA QUE NACE DE LO NATURAL</p>
+
+        <a href="#productos" class="logo">
+
+    <img
+        src="https://lh3.googleusercontent.com/d/1Xwupuf2VOpF65DtxXZdVukZ797HReEF2;"
+        alt="Logo"
+        width="150">
+
+
+
+</a>
+             <nav>
+                <a href="#inicio">INICIO</a>
+                <a href="#productos">PRODUCTOS</a>
+                <a href="#servicios">SERVICIOS</a>
+                <a href="#promociones">PROMOCIONES</a>
+                <a href="#contactos">CONTACTOS</a>
+             </nav>
+
+    </header>
+
+    <main>
+
+        <section class="informacion">
+            <h2>Bienvenido</h2>
+
+            <p>
+                Brillo Natural es una tienda especializada en maquillaje y 
+              productos del cuidado de la piel, todo nace de lo natural,
+              son productos naturales y hechos desde la tierra para ti.
+            </p>
+        </section>
+
+        <section class="chat">
+
+            <h2>Asistente Virtual</h2>
+
+            <div id="mensajes">
+
+                <div class="bot">
+                    ¡Hola! Soy el asistente de Brillo Natural.
+                </div>
+
+                <div class="cliente">
+                    Quiero conocer los productos disponibles.
+                </div>
+
+                <div class="bot">
+                    Tenemos bases, correctores, contornos en crema y polvo, rubor en crema y polvo, polvos sueltos, iluminadores, glosses y tintas.
+                </div>
+
+            </div>
+
+            <div class="controles">
+                <input
+                    type="text"
+                    placeholder="Escribe tu mensaje...">
+
+                <button>Enviar</button>
+            </div>
+
+        </section>
+
+    </main>
+
+ <section id="productos" class="seccion">
+
+            <div class="titulo-seccion">
+
+                <span>CATÁLOGO</span>
+
+                <h2>Nuestros productos</h2>
+
+                <p>
+                    Conoce algunos de los productos disponibles en nuestra tienda.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCADOR -->
+
+            <div class="herramientas-productos">
+
+                <input
+                    type="text"
+                    id="buscador"
+                    placeholder="Buscar producto...">
+
+                <select id="filtroCategoria">
+
+                    <option value="todos">Todas las categorías</option>
+
+                    <option value="Bases">Bases</option>
+
+                    <option value="Correctores">Correctores</option>
+
+                    <option value="Rubores">Rubores</option>
+
+                    <option value="Contornos">Contornos</option>
+
+                    <option value="Pestañinas">Pestañinas</option>
+
+                    <option value="Sombras">Sombras</option>
+
+                    <option value="Lip Glos">Lip Glos</option>
+
+                    <option value="Iluminadores">Iluminadores</option>
+
+                    <option value="Fijadores">Fijadores</option>
+
+                    <option value="Skincare">Skincare</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="productos-grid" id="listaProductos">
+
+
+                <!-- PRODUCTO 1 -->
+
+                <!-- CAMBIAR AQUÍ:
+                     Nombre, imagen, descripción, precio y categoría -->
+
+                <article
+                    class="producto"
+                    data-categoria="Bases"
+                    data-nombre="Lumi-Aura">
+
+                    <div class="imagen-producto">
+
+                        <!-- COLOCAR AQUÍ LA FOTO DEL PRODUCTO -->
+
+                        <img
+                            src="https://lh3.googleusercontent.com/d/1KaJgDU44ELfaT3M94u7VQFtvX9NFOpU9"
+                            alt="Lumi-Aura">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <span class="categoria">
+                            Bases
+                        </span>
+
+                        <!-- CAMBIAR NOMBRE -->
+
+                        <h3>Lumi-Aura</h3>
+
+                        <!-- CAMBIAR DESCRIPCIÓN -->
+
+                        <p>
+                            Base líquida de acabado natural y luminoso que unifica el tono de la piel y brinda una apariencia fresca y radiante. Su fórmula está pensada para sentirse ligera y cómoda durante el día
+                
+                        </p>
+
+                        <!-- CAMBIAR PRECIO -->
+
+                        <strong class="precio">
+                            $42.000
+                        </strong>
+
+                        <button
+                            class="btn-producto"
+                            onclick="agregarCarrito('Lumi-Aura', 42000)">
+
+                            Agregar al carrito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article
+                    class="producto"
+                    data-categoria="Correctores"
+                    data-nombre="Lumi-Cover">
+
+                    <div class="imagen-producto">
+
+                        <!-- CAMBIAR FOTO -->
+                        <img
+                            src="https://lh3.googleusercontent.com/d/1172LVwpkzhcNO3h0KS7Lz0fCmU2uJXdq
+"
+                            alt="Lumi-Cover">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <span class="categoria">
+                            Correctores
+                        </span>
+
+                        <!-- CAMBIAR NOMBRE -->
+
+                        <h3>Lumi-Cover</h3>
+
+                        <!-- CAMBIAR DESCRIPCIÓN -->
+
+                        <p>
+                            Corrector iluminador de cobertura ligera y modulable que ayuda a unificar el tono y aportar luminosidad al rostro. Su textura cómoda deja un acabado fresco y natural, perfecto para complementar tu maquillaje
+                        </p>
+
+                        <!-- CAMBIAR PRECIO -->
+
+                        <strong class="precio">
+                            $29.000
+                        </strong>
+
+                        <button
+                            class="btn-producto"
+                            onclick="agregarCarrito('Lumi-Cover', 29000)">
+
+                            Agregar al carrito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article
+                    class="producto"
+                    data-categoria="Rubores"
+                    data-nombre="Rose-Bloom">
+
+                    <div class="imagen-producto">
+
+                        <!-- CAMBIAR FOTO --> 
+                        <img
+                            src="https://lh3.googleusercontent.com/d/14HhqNB_1N9LPQ87ZbCRDP4VtJ-V-eeis
+"
+                            alt="Rose-Bloom">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <span class="categoria">
+                            Rubores
+                        </span>
+
+                        <!-- CAMBIAR NOMBRE -->
+
+                        <h3>Rose-Bloom</h3>
+
+                        <!-- CAMBIAR DESCRIPCIÓN -->
+
+                        <p>
+                            Rubor líquido de textura ligera y fácil de difuminar, diseñado para aportar un toque de color fresco y natural a las mejillas. Su acabado luminoso deja un efecto saludable y delicado, perfecto para un look natural
+                        </p>
+
+                        <!-- CAMBIAR PRECIO -->
+
+                        <strong class="precio">
+                            $28.000
+                        </strong>
+
+                        <button
+                            class="btn-producto"
+                            onclick="agregarCarrito('Rose-Bloom', 28.000)">
+
+                            Agregar al carrito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article
+                    class="producto"
+                    data-categoria="Contorno"
+                    data-nombre="Bronzer-Nature">
+
+                    <div class="imagen-producto">
+
+                        <!-- CAMBIAR FOTO -->
+
+                        <img
+                            src="https://lh3.googleusercontent.com/d/1Tyu4r1j3mATq6OpslmJDMrMnyesEHH2y"
+                            alt="Bronzer-Nature">
+
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <span class="categoria">
+                            Contorno
+                        </span>
+
+                        <!-- CAMBIAR NOMBRE -->
+
+                        <h3>Bronzer-Nature</h3>
+
+                        <!-- CAMBIAR DESCRIPCIÓN -->
+
+                        <p>
+                            Bronceador líquido de textura ligera y fácil de difuminar, diseñado para aportar calidez y dimensión al rostro. Su acabado natural y luminoso permite lograr un efecto bronceado suave y uniforme, ideal para complementar cualquier look.
+                        </p>
+
+                        <!-- CAMBIAR PRECIO -->
+
+                        <strong class="precio">
+                            $30.000
+                        </strong>
+
+                        <button
+                            class="btn-producto"
+                            onclick="agregarCarrito('Bronzer-Nature', 30000)">
+
+                            Agregar al carrito
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- AGREGADO: SERVICIOS -->
+        <!-- ===================================================== -->
+
+        <section id="servicios" class="seccion servicios">
+
+            <div class="titulo-seccion">
+
+                <span>LO QUE HACEMOS</span>
+
+                <h2>Nuestros servicios</h2>
+
+                <p>
+                    Además de nuestros productos, ofrecemos diferentes
+                    servicios que complementan nuestros productos.
+                </p>
+
+            </div>
+
+
+            <div class="servicios-grid">
+
+
+                <article class="servicio">
+
+                    <div class="icono-servicio">
+                        💄
+                    </div>
+
+                    <!-- CAMBIAR SERVICIO -->
+
+                    <h3>Asesoria personalizada de maquillaje</h3>
+
+                    <p>
+                        Ayudar a cada cliente a elegir los productos y tonos que mejor se adapten a sus gustos y necesidades.
+                    </p>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <div class="icono-servicio">
+                        ✨
+                    </div>
+
+                    <!-- CAMBIAR SERVICIO -->
+
+                    <h3>Prueba de productos y tonos</h3>
+
+                    <p>
+                        Ofrecer la posibilidad de conocer y probar algunos productos antes de comprarlos.
+                    </p>
+
+                </article>
+
+
+                <article class="servicio">
+
+                    <div class="icono-servicio">
+                        🎁
+                    </div>
+
+                    <!-- CAMBIAR SERVICIO -->
+
+                    <h3>Kits de maquillaje personalizados</h3>
+
+                    <p>
+                        Combos especiales según la ocasión o las preferencias del cliente.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- AGREGADO: PROMOCIONES -->
+        <!-- ===================================================== -->
+
+        <section id="promociones" class="promociones">
+
+            <div class="promocion-texto">
+
+                <span>PROMOCIÓN ESPECIAL</span>
+
+                <!-- CAMBIAR PROMOCIÓN -->
+
+                <h2>
+                    ¡Hasta 20% de descuento!
+                </h2>
+
+                <p>
+                    Aprovecha nuestras promociones en productos
+                    seleccionados.
+                </p>
+
+                <!-- CAMBIAR TEXTO -->
+
+                <button
+                    class="btn-promocion"
+                    onclick="mostrarPromocion()">
+
+                    Ver promoción
+
+                </button>
+
+            </div>
+
+
+            <div class="promocion-precio">
+
+                <strong>
+                    20%
+                </strong>
+
+                <span>
+                    OFF
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- AGREGADO: NOSOTROS -->
+        <!-- ===================================================== -->
+
+        <section id="nosotros" class="seccion nosotros">
+
+            <div class="nosotros-imagen">
+
+                <!-- CAMBIAR FOTO:
+                     colocar una fotografía real del emprendimiento,
+                     integrantes o establecimiento -->
+
+                <img
+                    src="https://lh3.googleusercontent.com/d/1Rv9cHF3TIwTwzxBTk2hb8jhbZA7eRbEA"
+                    alt="Equipo de Brillo Natural">
+
+            </div>
+
+
+            <div class="nosotros-texto">
+
+                <span>CONÓCENOS</span>
+
+                <!-- CAMBIAR INFORMACIÓN DE LA EMPRESA -->
+
+                <h2>
+                    Belleza para ti
+                </h2>
+
+                <p>
+                    Brillo Natural nació con el objetivo de ofrecer productos de maquillaje que permitan resaltar la belleza y la esencia de cada persona, combinando calidad, una imagen natural y productos inspirados en el cuidado de la piel.
+                </p>
+
+                <p>
+                    Los integrantes de Brillo Natural están comprometidos con el emprendimiento porque creen en la importancia de crear una marca que combine belleza, confianza y cuidado personal. Cada integrante aporta sus ideas, creatividad y esfuerzo para desarrollar productos de calidad y lograr que la empresa crezca.
+                </p>
+
+
+                <div class="datos-empresa">
+
+                    <div>
+
+                        <strong>+100</strong>
+
+                        <span>Clientes</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>+50</strong>
+
+                        <span>Productos</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>100%</strong>
+
+                        <span>Compromiso</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================== -->
+        <!-- AGREGADO: CONTACTO -->
+        <!-- ===================================================== -->
+
+        <section id="contacto" class="seccion contacto">
+
+            <div class="titulo-seccion">
+
+                <span>CONTÁCTANOS</span>
+
+                <h2>Hablemos</h2>
+
+                <p>
+                    ¿Tienes alguna pregunta? Escríbenos.
+                </p>
+
+            </div>
+
+
+            <div class="contacto-contenido">
+
+
+                <div class="datos-contacto">
+
+                    <!-- CAMBIAR DATOS -->
+
+                    <h3>Información de contacto</h3>
+
+                    <p>
+                        📍 Medellín, Colombia
+                    </p>
+
+                    <p>
+                        📞 +57 300 600 0489
+                    </p>
+
+                    <p>
+                        ✉️ contacto@brillonatural.com
+                    </p>
+
+                    <p>
+                        🕒 Lunes - Sábado: 9:00 AM - 6:00 PM
+                    </p>
+
+
+                    <div class="redes">
+
+                        <!-- CAMBIAR LOS # POR LOS ENLACES REALES -->
+
+                        <a href="#" target="_blank">
+                            Instagram
+                        </a>
+
+                        <a href="#" target="_blank">
+                            Facebook
+                        </a>
+
+                        <a href="#" target="_blank">
+                            WhatsApp
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="formulario"
+                    id="formularioContacto">
+
+                    <label for="nombre">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre"
+                        required>
+
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        placeholder="ejemplo@gmail.com"
+                        required>
+
+
+                    <label for="asunto">
+                        Asunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="asunto"
+                        placeholder="¿En qué podemos ayudarte?"
+                        required>
+
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        rows="5"
+                        placeholder="Escribe tu mensaje..."
+                        required></textarea>
+
+
+                    <button
+                        type="submit"
+                        class="btn-enviar">
+
+                        Enviar mensaje
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================================================= -->
+    <!-- AGREGADO: CARRITO -->
+    <!-- ========================================================= -->
+
+    <aside id="carrito" class="carrito">
+
+        <div class="carrito-header">
+
+            <h2>
+                Mi carrito
+            </h2>
+
+            <button
+                onclick="cerrarCarrito()"
+                class="cerrar-carrito">
+
+                X
+
+            </button>
+
+        </div>
+
+
+        <div id="productosCarrito">
+
+            <p>
+                No hay productos en el carrito.
+            </p>
+
+        </div>
+
+
+        <div class="total-carrito">
+
+            <span>
+                Total:
+            </span>
+
+            <strong id="total">
+                $0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="btn-comprar"
+            onclick="finalizarCompra()">
+
+            Finalizar compra
+
+        </button>
+
+    </aside>
+
+
+    <!-- BOTÓN PARA ABRIR CARRITO -->
+
+    <button
+        id="botonCarrito"
+        onclick="abrirCarrito()">
+
+        🛒
+        <span id="contadorCarrito">
+            0
+        </span>
+
+    </button>
+<a
+    href="#"
+    id="botonInicio"
+    title="Volver al inicio">
+
+    ↑
+
+</a>
+
+    <!-- ========================================================= -->
+    <!-- AGREGADO: FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer>
+
+        <div class="footer-contenido">
+
+
+            <div>
+
+                <!-- CAMBIAR NOMBRE -->
+
+                <h2>
+                    BRILLO NATURAL
+                </h2>
+
+                <p>
+                    Maquillaje, asesorias y cuidado de la piel para ti
+                    
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegación
+                </h3>
+
+                <a href="#">
+                    Inicio
+                </a>
+
+                <a href="#productos">
+                    Productos
+                </a>
+
+                <a href="#servicios">
+                    Servicios
+                </a>
+
+                <a href="#promociones">
+                    Promociones
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Empresa
+                </h3>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#contacto">
+                    Atención al cliente
+                </a>
+
+                <a href="#contacto">
+                    Preguntas
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Brillo Natural. Todos los derechos reservados.
+            </p>
+
+            <!-- CAMBIAR NOMBRE DE LOS ESTUDIANTES -->
+
+            <p>
+                Sitio web desarrollado por Maria Isabel Ortiz.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ========================================================= -->
+    <!-- IMPORTANTE: CONECTAR JAVASCRIPT -->
+    <!-- ========================================================= -->
+
+    <script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>
